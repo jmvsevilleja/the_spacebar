@@ -35,10 +35,8 @@ Create controller faster
  bin/console make:controller
 
 List all routes
- bin/console debug:router
+`bin/console debug:router`
 
 Install Twig
-```
- composer require symfony/twig-bundle
-```
+`composer require symfony/twig-bundle`
 
