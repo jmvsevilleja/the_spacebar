@@ -38,6 +38,7 @@ List all routes
  bin/console debug:router
 
 Install Twig
+```
  composer require symfony/twig-bundle
+```
 
- 
