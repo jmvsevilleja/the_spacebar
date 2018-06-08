@@ -10,9 +10,11 @@ Run app immediately
 `php -S 127.0.0.1:8000 -t public`
 
 3 directory
-```public/
+```
+public/
  src/
- config/```
+ config/
+ ```
 
 Installing Server
 `composer require server`
