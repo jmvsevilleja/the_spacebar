@@ -4,35 +4,35 @@ Hello World
 Install composer
 
 Install Symfony
- composer create-project symfony/skeleton the_spacebar
+`composer create-project symfony/skeleton the_spacebar`
 
 Run app immediately
- php -S 127.0.0.1:8000 -t public
+`php -S 127.0.0.1:8000 -t public`
 
 3 directory
- public/
+```public/
  src/
- config/
+ config/```
 
 Installing Server
- composer require server
+`composer require server`
 
 Better web server
- bin/console server:run
+`bin/console server:run`
 
 List of all bin/console ex. debuging
- bin/console
+`bin/console`
 
 Full Demo
- https://github.com/symfony/demo
+`https://github.com/symfony/demo`
 
 ----------------------
 
 Annotation - extra feature for routing
- composer require annotations
+`composer require annotations`
 
 Create controller faster
- bin/console make:controller
+`bin/console make:controller`
 
 List all routes
 `bin/console debug:router`
