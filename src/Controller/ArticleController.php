@@ -8,20 +8,24 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class ArticleController extends AbstractController
 {
-	/**
-	 * @Route("/{slug}")
-	 */
-	public function homepage($slug)
-	{	
-		$comments = [
-			'A','B','C',
-		];
-		//you can do anything here
-		//return response
-		return $this->render('article/show.html.twig',[
-			'title' => ucwords($slug),
-			'comments' => $comments,
-		]);
-		
-	}
+    /**
+     * @Route("/{slug}")
+     */
+    public function homepage($slug)
+    {    
+        $comments = [
+            'A','B','C',
+        ];
+        //you can do anything here
+        //return response
+        return $this->render('article/show.html.twig',[
+            'title' => ucwords($slug),
+            'comments' => $comments,
+        ]);
+
+        /*return new Response(
+            '<html><body>Lucky number: '.$number.'</body></html>'
+        );*/
+        
+    }
 }

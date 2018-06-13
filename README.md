@@ -5,15 +5,21 @@ Install composer
 
 Install Symfony
 `composer create-project symfony/skeleton the_spacebar`
+`composer create-project symfony/framework-standard-edition my_project_name`
 
 Run app immediately
 `php -S 127.0.0.1:8000 -t public`
 
 3 directory
 ```
-public/
- src/
- config/
+ config/ config routes, services, packages
+ public/ - public files here
+ src/ - PHP code
+ templates/ - Teig templates
+ 
+ bin/ - bin/console
+ var/ - cache, logs
+ vendor/ - thirdparty
  ```
 
 Installing Server
@@ -39,6 +45,16 @@ Create controller faster
 List all routes
 `bin/console debug:router`
 
+Install Profiler
+`composer require --dev symfony/profiler-pack`
+
 Install Twig
 `composer require symfony/twig-bundle`
 
+
+----------------------
+
+Routing
+Controller
+Creating and Using Templates
+Configuring Symfony (and Environments)
