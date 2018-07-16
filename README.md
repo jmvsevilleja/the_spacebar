@@ -50,11 +50,19 @@ Install Profiler
 
 Install Twig
 `composer require symfony/twig-bundle`
+	{{dump()}}
+Install Debug
+`composer require debug --dev`
 
-
+Removing pack
+`composer unpack debug`
 ----------------------
 
 Routing
 Controller
 Creating and Using Templates
 Configuring Symfony (and Environments)
+
+----------------------
+Auto wiring
+`./bin/console debug:autowiring`
