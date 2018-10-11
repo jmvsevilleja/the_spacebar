@@ -47,6 +47,7 @@ List all routes
 
 Install Profiler
 `composer require --dev symfony/profiler-pack`
+`composer require profiler --dev`
 
 Install Twig
 `composer require twig`
@@ -55,6 +56,7 @@ https://twig.symfony.com/doc/2.x/
 Install Debug
 `composer require debug --dev`
  {{dump()}}
+
 
 Removing pack
 `composer unpack debug`
