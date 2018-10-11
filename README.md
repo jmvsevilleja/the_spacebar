@@ -16,7 +16,7 @@ Run app immediately
  public/ - public files here
  src/ - PHP code
  templates/ - Teig templates
- 
+
  bin/ - bin/console
  var/ - cache, logs
  vendor/ - thirdparty
@@ -49,10 +49,12 @@ Install Profiler
 `composer require --dev symfony/profiler-pack`
 
 Install Twig
-`composer require symfony/twig-bundle`
-	{{dump()}}
+`composer require twig`
+https://twig.symfony.com/doc/2.x/
+
 Install Debug
 `composer require debug --dev`
+ {{dump()}}
 
 Removing pack
 `composer unpack debug`
@@ -66,3 +68,16 @@ Configuring Symfony (and Environments)
 ----------------------
 Auto wiring
 `./bin/console debug:autowiring`
+
+----------------------
+Flex / Recipies - https://symfony.sh
+
+Security Checker
+`composer require securty-checker`
+`bin/console security:check`
+
+Logger
+`composer require logger`
+
+Emailer
+`composer require mailer`

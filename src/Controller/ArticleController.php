@@ -3,16 +3,23 @@ namespace App\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-#use Symfony\Component\HttpFoundation\Response;
+# use Symfony\Component\HttpFoundation\Response;
 
 
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/{slug}")
+     * @Route("/")
      */
-    public function homepage($slug)
-    {    
+    public function homepage()
+    {
+        return $this->render('article/index.html.twig');
+    }
+    /**
+     * @Route("/news/{slug}")
+     */
+    public function show($slug)
+    {
         $comments = [
             'A','B','C',
         ];
@@ -22,10 +29,5 @@ class ArticleController extends AbstractController
             'title' => ucwords($slug),
             'comments' => $comments,
         ]);
-
-        /*return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );*/
-        
     }
 }
