@@ -64,7 +64,7 @@ How to Unpack a pack
 
 ----------------------
 Asset
-`composer require symfony/asset"
+`composer require symfony/asset`
 {{ asset('css/some.css') }}
 ----------------------
 
@@ -74,10 +74,7 @@ Creating and Using Templates
 Configuring Symfony (and Environments)
 
 ----------------------
-Auto wiring
-`./bin/console debug:autowiring`
 
-----------------------
 Flex / Recipies - https://symfony.sh
 
 Security Checker
@@ -89,3 +86,18 @@ Logger
 
 Emailer
 `composer require mailer`
+
+-------------------
+`composer require symfony/http-foundation`
+return new JsonResponse(['hearts' => rand(5, 100)]);
+-------------------
+Services - any object that does work
+
+router object - matches routes & generates URLS
+twig object - render templates
+logger object - stores logs in var/log/dev.log
+tail -f var/log/dev.log
+
+public function toggleArticleHeart($slug, loggerInterface $logger)
+Logger Autowiring
+`bin/console debug:autowiring`
