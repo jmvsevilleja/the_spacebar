@@ -9,29 +9,36 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
-        return $this->render('article/index.html.twig');
+        return $this->render('article/homepage.html.twig');
     }
     /**
-     * @Route("/news/{slug}")
+     * @Route("/news/{slug}", name="article_show")
      */
     public function show($slug)
     {
         $comments = [
-            'A',
-            'B',
-            'C',
+            'I ate a normal rock once. It did NOT taste like bacon!',
+            'Woohoo! I\'m going on an all-asteroid diet!',
+            'I like bacon too! Buy some from my site! bakinsomebacon.com',
         ];
         //you can do anything here
         //return response
 
         // dump($slug, $this);
+        $article = [
+            'title' => 'Title',
+            'slug' => 'slug',
+            'content' => 'Lorem Ipsum',
+        ];
+
 
         return $this->render('article/show.html.twig',[
             'title' => ucwords(str_replace('-', ' ', $slug)),
+            'article' => $article,
             'comments' => $comments,
         ]);
     }

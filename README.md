@@ -45,6 +45,8 @@ Create controller faster
 List all routes
 `bin/console debug:router`
 
+-----------------------
+
 Install Profiler
 `composer require --dev symfony/profiler-pack`
 `composer require profiler --dev`
@@ -57,9 +59,13 @@ Install Debug
 `composer require debug --dev`
  {{dump()}}
 
-
-Removing pack
+How to Unpack a pack
 `composer unpack debug`
+
+----------------------
+Asset
+`composer require symfony/asset"
+{{ asset('css/some.css') }}
 ----------------------
 
 Routing
