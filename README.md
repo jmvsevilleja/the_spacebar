@@ -98,6 +98,7 @@ Emailer
 return new JsonResponse(['hearts' => rand(5, 100)]);
 -------------------
 Services - any object that does work
+Everything in symfony is done by service by installing bundles
 
 router object - matches routes & generates URLS
 twig object - render templates
@@ -107,3 +108,10 @@ tail -f var/log/dev.log
 public function toggleArticleHeart($slug, loggerInterface $logger)
 Logger Autowiring
 `bin/console debug:autowiring`
+
+-----------------------
+KnpMarkdownBundle
+composer require knplabs/knp-markdown-bundle
+
+----------------------
+Cache Service
