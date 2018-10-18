@@ -3,7 +3,7 @@ namespace App\Controller;
 
 use Psr\Log\LoggerInterface;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 # use Symfony\Component\HttpFoundation\Response;

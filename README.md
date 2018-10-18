@@ -31,6 +31,9 @@ Installing Server
 Better web server
 `bin/console server:run`
 
+Clearing Cache
+bin/console cache:clear
+
 List of all bin/console ex. debuging
 `bin/console`
 
