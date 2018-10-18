@@ -22,6 +22,9 @@ Run app immediately
  vendor/ - thirdparty
  ```
 
+Uninstalling Bundle
+composer remove vendor/package
+
 Installing Server
 `composer require server`
 
