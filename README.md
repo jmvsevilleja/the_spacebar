@@ -115,3 +115,8 @@ composer require knplabs/knp-markdown-bundle
 
 ----------------------
 Cache Service
+use Symfony\Component\Cache\Adapter\AdapterInterface;
+
+----------------------
+Dumping Bundle Configuration
+bin/console config:dump KnpMarkdownBundle
